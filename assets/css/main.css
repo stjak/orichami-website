@@ -227,13 +227,15 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.webp") bottom left;
+		background: #348cb2 url("images/bg.webp") top left;
 		background-repeat: repeat-x;
-		height: 100%;
+		background-size: cover;
+		height: 100vh;
 		left: 0;
+		right: 0;
+		top: 0;
 		opacity: 1;
 		position: fixed;
-		top: 0;
 	}
 
 	@-moz-keyframes bg {
