@@ -213,44 +213,30 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-    /* Animation */
-    -moz-animation: bg 60s linear infinite;
-    -webkit-animation: bg 60s linear infinite;
-    -ms-animation: bg 60s linear infinite;
-    animation: bg 60s linear infinite;
+		-moz-animation: bg 60s linear infinite;
+		-webkit-animation: bg 60s linear infinite;
+		-ms-animation: bg 60s linear infinite;
+		animation: bg 60s linear infinite;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	/* Set your background with this */
 
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-    -moz-transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-
-    /* Background properties */
-    background: #348cb2 url("images/bg.webp") top left;
-    background-repeat: repeat-x; /* Horizontally repeat the background */
-    background-size: cover; /* Ensure the background covers the entire screen */
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    left: 0;
-    right: 0;
-    top: 0;
-    position: fixed;
-    opacity: 1;
+		background: #348cb2 url("images/bg.webp") top left;
+		background-repeat: repeat-x;
+		background-size: cover;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		top: 0;
+		opacity: 1;
+		position: fixed;
 	}
-
-	/* Animation for scrolling effect */
-	@keyframes bg {
-		0% {
-			background-position: 0 0;
-		}
-		100% {
-			background-position: -10000px 0; /* Adjust this value for desired speed */
-		}
-}
 
 	@-moz-keyframes bg {
 		0% {
