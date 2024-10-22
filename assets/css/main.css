@@ -213,40 +213,30 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-    /* Remove fixed positioning to allow scrolling */
-    position: absolute; /* or relative, depending on your layout */
-    top: 0;
-    left: 0;
-    right: 0;
-    
-    /* Ensure the element fills at least the viewport height */
-    min-height: 100vh;
-    height: auto;
-    
-    /* Optimize background properties */
-    background: #348cb2 url("images/bg.webp") top left no-repeat;
-    background-size: cover;
-    
-    /* Remove conflicting background-repeat */
-    /* background-repeat: repeat-x; */ /* Removed */
-    
-    /* Preserve existing animations and transformations */
-    -moz-animation: bg 60s linear infinite;
-    -webkit-animation: bg 60s linear infinite;
-    -ms-animation: bg 60s linear infinite;
-    animation: bg 60s linear infinite;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    
-    /* Maintain opacity if needed */
-    opacity: 1;
-}
+		-moz-animation: bg 60s linear infinite;
+		-webkit-animation: bg 60s linear infinite;
+		-ms-animation: bg 60s linear infinite;
+		animation: bg 60s linear infinite;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	/* Set your background with this */
+
+		background: #348cb2 url("images/bg.webp") top left;
+		background-repeat: repeat-x;
+		background-size: contain !important;
+		height: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		opacity: 1;
+		position: fixed;
+	}
 
 	@-moz-keyframes bg {
 		0% {
@@ -898,10 +888,11 @@ input, select, textarea {
 			}
 		}
 
-		#bg {
+		/* #bg {
 			background-size: 750px auto;
 			width: 2250px;
-		} }
+		} */
+	}
 
 /* Mobile */
 
@@ -984,10 +975,10 @@ input, select, textarea {
 			}
 		}
 
-		#bg {
+		/* #bg {
 			background-size: 300px auto;
 			width: 900px;
-		}
+		} */
 
 	/* Header */
 
