@@ -231,8 +231,8 @@ input, select, textarea {
 
     /* Background properties */
     background: #348cb2 url("images/bg.webp") top left;
-    background-repeat: repeat-x; /* Horizontally repeat the background */
-    background-size: cover; /* Ensure the background covers the entire screen */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-size: 100% 100%; /* Ensures it covers the entire screen */
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     left: 0;
@@ -240,16 +240,16 @@ input, select, textarea {
     top: 0;
     position: fixed;
     opacity: 1;
-	}
+}
 
-	/* Animation for scrolling effect */
-	@keyframes bg {
-		0% {
-			background-position: 0 0;
-		}
-		100% {
-			background-position: -10000px 0; /* Adjust this value for desired speed */
-		}
+/* Animation for scrolling effect */
+@keyframes bg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -10000px 0; /* Adjust this value for desired speed */
+    }
 }
 
 	@-moz-keyframes bg {
